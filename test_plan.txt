@@ -1,0 +1,31 @@
+# Param 1 = type of test
+# Param 2 = Component being tested
+# Param 3 = script to run
+# Param 4 = Severity if test fails (Sev1=stop release, Sev2=Bad and for discussion, Sev3=Unfortunate)
+# Param 5 = Expected result
+# Param 6 = (Optional) Data
+# Param 7 = (Optional) ID
+Regression,UserLogin,steps/login.sh,1,CONTAINS,expected/login.txt,credentials.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/peta_francis.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/george_pearson.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/faye_thames.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/sandeep_midha.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/rory_winter.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/jenny_wu.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/mark_ehrenreich.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/cora_engel.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/dan_ankemah.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/jorge_georgiannakis.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/pooja_reddy.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/enzo_funagelli.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/natasha_pham.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/miranda_croft.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/roshni_khalid.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/julio_galinder.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/elida_moura.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/chris_ingilby.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/emily_crobak.txt
+Regression,CreateUser,steps/createUser.sh,2,CONTAINS,new_user_expected.txt,data/maryam_kapur.txt
+Regression,EditUser,python steps/edit.py,2,EXACT,fake_file.txt,first_name=Jorge,george@example.com
+Regression,EditUser,python steps/edit.py,2,EXACT,fake_file.txt,age=38,core@domain.test
+Regression,EditUser,python steps/edit.py,2,EXACT,fake_file.txt,last_name=Ankomah,dan@oprqu.test
